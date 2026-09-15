@@ -3,93 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Moths Magazine</title>
+    <title>The Moths Magazine — A Multidisciplinary Literary and Scientific Journal</title>
     <style>
         body {
             font-family: 'Georgia', serif;
-            background-color: #ffffff;
-            color: #2b2b2b;
+            background-color: #121212;
+            color: #e0e0e0;
             margin: 0;
             padding: 0;
-            line-height: 1.6;
+            line-height: 1.8;
         }
         header {
             text-align: center;
-            padding: 2.5rem 1rem 1.5rem;
-            border-bottom: 2px solid #2b2b2b;
+            padding: 4rem 1rem 2rem;
+            border-bottom: 1px solid #333;
             max-width: 900px;
             margin: 0 auto;
         }
-        h1 {
+        h1.site-title {
             font-size: 3rem;
-            letter-spacing: 2px;
+            letter-spacing: 3px;
             margin: 0;
             text-transform: uppercase;
+            color: #ffffff;
         }
         p.subtitle {
             font-style: italic;
-            color: #666;
+            color: #aaa;
+            font-size: 1.1rem;
             margin-top: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        p.description {
+            max-width: 650px;
+            margin: 1rem auto 0;
+            color: #888;
+            font-size: 0.95rem;
         }
         main {
             max-width: 900px;
-            margin: 2rem auto;
-            padding: 0 1rem;
+            margin: 3rem auto;
+            padding: 0 1.5rem;
+        }
+        .issue-section {
+            margin-bottom: 4rem;
+            background-color: #1a1a1a;
+            border: 1px solid #333;
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.5);
         }
         .issue-title {
             font-size: 1.8rem;
-            border-bottom: 1px solid #2b2b2b;
+            color: #ffffff;
+            border-bottom: 2px solid #b388ff;
             padding-bottom: 0.5rem;
-            margin-top: 2.5rem;
+            margin-top: 0;
             margin-bottom: 1.5rem;
             text-transform: uppercase;
             letter-spacing: 1px;
         }
-        .articles-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 1.5rem;
-            list-style: none;
-            padding: 0;
-        }
-        .article-card {
-            border: 1px solid #e0e0e0;
-            border-radius: 6px;
-            padding: 1.5rem;
-            background-color: #ffffff;
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
-        }
-        .article-card:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-        }
-        .category {
-            font-size: 0.8rem;
+        .category-title {
+            font-size: 1.2rem;
+            color: #b388ff;
+            margin-top: 1.5rem;
+            margin-bottom: 0.8rem;
             text-transform: uppercase;
             letter-spacing: 1px;
-            color: #8b0000;
-            font-weight: bold;
-            margin-bottom: 0.5rem;
-            display: block;
         }
-        .article-card h2 {
-            font-size: 1.3rem;
-            margin-top: 0;
-            margin-bottom: 0.5rem;
+        .article-list {
+            list-style: none;
+            padding-left: 0;
+            margin: 0;
         }
-        .article-card a {
+        .article-item {
+            padding: 0.8rem 0;
+            border-bottom: 1px solid #2a2a2a;
+        }
+        .article-item:last-child {
+            border-bottom: none;
+        }
+        .article-link {
+            font-size: 1.1rem;
+            color: #ffffff;
             text-decoration: none;
-            color: #1a1a1a;
+            font-weight: bold;
+            transition: color 0.2s ease;
         }
-        .article-card a:hover {
-            color: #8b0000;
+        .article-link:hover {
+            color: #b388ff;
+        }
+        .author-name {
+            font-style: italic;
+            color: #888;
+            font-size: 0.95rem;
+            margin-left: 0.5rem;
         }
         footer {
             text-align: center;
             padding: 2rem 1rem;
-            border-top: 1px solid #e0e0e0;
+            border-top: 1px solid #333;
             max-width: 900px;
-            margin: 3rem auto 0;
+            margin: 4rem auto 0;
             font-size: 0.9rem;
             color: #777;
         }
@@ -98,52 +113,172 @@
 <body>
 
     <header>
-        <h1>The Moths Magazine</h1>
-        <p class="subtitle">A literary and scientific journal</p>
+        <h1 class="site-title">The Moths Magazine</h1>
+        <p class="subtitle">A Multidisciplinary Literary and Scientific Journal</p>
+        <p class="description">Exploring science, literature, philosophy, fashion, entomology, and human experience through independent prose, poetry, and research.</p>
     </header>
 
     <main>
-        <!-- ISSUE 2 SECTION -->
-        <h2 class="issue-title">Issue 02 — Current Issue</h2>
-        <ul class="articles-grid" id="issue2-grid">
-            <li class="article-card">
-                <span class="category">Coming Soon</span>
-                <h2><a href="#">Issue 02 Articles Coming Soon</a></h2>
-            </li>
-        </ul>
 
-        <!-- ISSUE 1 SECTION -->
-        <h2 class="issue-title">Issue 01 — Archive</h2>
-        <ul class="articles-grid">
-            <li class="article-card">
-                <span class="category">Science</span>
-                <h2><a href="article1.html">The Art of Spectroscopy</a></h2>
-            </li>
-            <li class="article-card">
-                <span class="category">Entomology</span>
-                <h2><a href="article2.html">Moths Seekers of Light</a></h2>
-            </li>
-            <li class="article-card">
-                <span class="category">Poetry</span>
-                <h2><a href="article3.html">Webs of Poison</a></h2>
-            </li>
-            <li class="article-card">
-                <span class="category">Rights</span>
-                <h2><a href="article4.html">Misogyny in STEM</a></h2>
-            </li>
-            <li class="article-card">
-                <span class="category">Rights</span>
-                <h2><a href="article5.html">The Ongoing Struggle of Women in Afghanistan</a></h2>
-            </li>
-            <li class="article-card">
-                <span class="category">Literature</span>
-                <h2><a href="article6.html">Book Review and Character Sketch of Wuthering Heights</a></h2>
-            </li>
-            <li class="article-card">
-                <span class="category">Philosophy</span>
-                <h2><a href="article7.html">Descartes Meditations</a></h2>
-            </li>
-        </ul>
+        <!-- ISSUE 02 -->
+        <section class="issue-section">
+            <h2 class="issue-title">Issue 02</h2>
+
+            <!-- Literature -->
+            <div class="category-group">
+                <h3 class="category-title">Literature</h3>
+                <ul class="article-list">
+                    <li class="article-item">
+                        <a href="article9.html" class="article-link">The Scarlet Letter: A Book Review</a>
+                        <span class="author-name">By Zainab Ammar</span>
+                    </li>
+                    <li class="article-item">
+                        <a href="article18.html" class="article-link">Inside The Bell Jar</a>
+                        <span class="author-name">By Malak Sinan</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Science -->
+            <div class="category-group">
+                <h3 class="category-title">Science</h3>
+                <ul class="article-list">
+                    <li class="article-item">
+                        <a href="article10.html" class="article-link">Wormholes: Science Fiction or Reality</a>
+                        <span class="author-name">By Zahraa Ammar</span>
+                    </li>
+                    <li class="article-item">
+                        <a href="article14.html" class="article-link">How Quantum Mechanics Suggest The Multiverse As a Possible Interpretation of Reality?</a>
+                        <span class="author-name">By Ahmed Mustafa</span>
+                    </li>
+                    <li class="article-item">
+                        <a href="article15.html" class="article-link">How Did the First Telescope Used in Astronomy Work?</a>
+                        <span class="author-name">By Mohamed Hassan</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Philosophy -->
+            <div class="category-group">
+                <h3 class="category-title">Philosophy</h3>
+                <ul class="article-list">
+                    <li class="article-item">
+                        <a href="article11.html" class="article-link">The Lily of the Field and the Bird of the Air</a>
+                        <span class="author-name">By Zainab Ammar</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Rights -->
+            <div class="category-group">
+                <h3 class="category-title">Rights</h3>
+                <ul class="article-list">
+                    <li class="article-item">
+                        <a href="article12.html" class="article-link">Do I Walk Like a Snail?</a>
+                        <span class="author-name">By Zainab Ammar</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Entomology -->
+            <div class="category-group">
+                <h3 class="category-title">Entomology</h3>
+                <ul class="article-list">
+                    <li class="article-item">
+                        <a href="article13.html" class="article-link">Growing Wings to Go Your Own Way, or Is It for Your Final Decay?</a>
+                        <span class="author-name">By Zainab Ammar</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Poetry -->
+            <div class="category-group">
+                <h3 class="category-title">Poetry</h3>
+                <ul class="article-list">
+                    <li class="article-item">
+                        <a href="article16.html" class="article-link">Melancholy Boughs</a>
+                        <span class="author-name">By Zainab Ammar</span>
+                    </li>
+                    <li class="article-item">
+                        <a href="article17.html" class="article-link">The Land of Psyche</a>
+                        <span class="author-name">By Malak Sinan</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ISSUE 01 -->
+        <section class="issue-section">
+            <h2 class="issue-title">Issue 01</h2>
+
+            <!-- Literature & Reviews -->
+            <div class="category-group">
+                <h3 class="category-title">Literature</h3>
+                <ul class="article-list">
+                    <li class="article-item">
+                        <a href="article1.html" class="article-link">The Turn of the Screw: A Novella Review</a>
+                        <span class="author-name">By Zainab Ammar</span>
+                    </li>
+                    <li class="article-item">
+                        <a href="article8.html" class="article-link">Strange Case of Dr. Jekyll and Mr. Hyde: A Novella Review</a>
+                        <span class="author-name">By Zainab Ammar</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Science -->
+            <div class="category-group">
+                <h3 class="category-title">Science</h3>
+                <ul class="article-list">
+                    <li class="article-item">
+                        <a href="article2.html" class="article-link">Passive Radiative Cooling Surfaces for Urban Heat Mitigation</a>
+                        <span class="author-name">By Zainab Ammar</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Philosophy -->
+            <div class="category-group">
+                <h3 class="category-title">Philosophy</h3>
+                <ul class="article-list">
+                    <li class="article-item">
+                        <a href="article3.html" class="article-link">Silence, Faith, and Nature in Kierkegaard's Discourses</a>
+                        <span class="author-name">By Zainab Ammar</span>
+                    </li>
+                    <li class="article-item">
+                        <a href="article4.html" class="article-link">Meditations on First Philosophy: Descartes' Quest for Certainty</a>
+                        <span class="author-name">By Zainab Ammar</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Fashion & Culture -->
+            <div class="category-group">
+                <h3 class="category-title">Fashion &amp; Culture</h3>
+                <ul class="article-list">
+                    <li class="article-item">
+                        <a href="article5.html" class="article-link">Gothic Aesthetics and Silhouette Evolution in Modern Garment Design</a>
+                        <span class="author-name">By Zainab Ammar</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Poetry -->
+            <div class="category-group">
+                <h3 class="category-title">Poetry</h3>
+                <ul class="article-list">
+                    <li class="article-item">
+                        <a href="article6.html" class="article-link">Bewildered by Mortality</a>
+                        <span class="author-name">By Zainab Ammar</span>
+                    </li>
+                    <li class="article-item">
+                        <a href="article7.html" class="article-link">Chambers of the Mind</a>
+                        <span class="author-name">By Zainab Ammar</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
     </main>
 
     <footer>
