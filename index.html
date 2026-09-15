@@ -17,12 +17,12 @@
             text-align: center;
             padding: 4rem 1rem 2rem;
             border-bottom: 1px solid #333;
-            max-width: 900px;
+            max-width: 850px;
             margin: 0 auto;
         }
         h1.site-title {
-            font-size: 3rem;
-            letter-spacing: 3px;
+            font-size: 2.8rem;
+            letter-spacing: 2px;
             margin: 0;
             text-transform: uppercase;
             color: #ffffff;
@@ -41,9 +41,9 @@
             font-size: 0.95rem;
         }
         main {
-            max-width: 900px;
+            max-width: 850px;
             margin: 3rem auto;
-            padding: 0 1.5rem;
+            padding: 0 1rem;
         }
         .issue-section {
             margin-bottom: 4rem;
@@ -66,7 +66,7 @@
         .category-title {
             font-size: 1.2rem;
             color: #b388ff;
-            margin-top: 1.5rem;
+            margin-top: 1.8rem;
             margin-bottom: 0.8rem;
             text-transform: uppercase;
             letter-spacing: 1px;
@@ -77,6 +77,11 @@
             margin: 0;
         }
         .article-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+            gap: 0.5rem 1rem;
             padding: 0.8rem 0;
             border-bottom: 1px solid #2a2a2a;
         }
@@ -84,10 +89,11 @@
             border-bottom: none;
         }
         .article-link {
-            font-size: 1.1rem;
+            font-size: 1.05rem;
             color: #ffffff;
             text-decoration: none;
             font-weight: bold;
+            flex: 1 1 300px;
             transition: color 0.2s ease;
         }
         .article-link:hover {
@@ -96,14 +102,14 @@
         .author-name {
             font-style: italic;
             color: #888;
-            font-size: 0.95rem;
-            margin-left: 0.5rem;
+            font-size: 0.9rem;
+            white-space: nowrap;
         }
         footer {
             text-align: center;
             padding: 2rem 1rem;
             border-top: 1px solid #333;
-            max-width: 900px;
+            max-width: 850px;
             margin: 4rem auto 0;
             font-size: 0.9rem;
             color: #777;
@@ -115,7 +121,7 @@
     <header>
         <h1 class="site-title">The Moths Magazine</h1>
         <p class="subtitle">A Multidisciplinary Literary and Scientific Journal</p>
-        <p class="description">Exploring science, literature, philosophy, fashion, entomology, and human experience through independent prose, poetry, and research.</p>
+        <p class="description">Exploring science, literature, philosophy, rights, entomology, and human experience through independent prose, poetry, and research.</p>
     </header>
 
     <main>
@@ -163,7 +169,7 @@
                 <h3 class="category-title">Philosophy</h3>
                 <ul class="article-list">
                     <li class="article-item">
-                        <a href="article11.html" class="article-link">The Lily of the Field and the Bird of the Air</a>
+                        <a href="article11.html" class="article-link">The Lily of the Field and the Bird of the Air: A Book Review and Personal Reflections</a>
                         <span class="author-name">By Zainab Ammar</span>
                     </li>
                 </ul>
@@ -211,16 +217,12 @@
         <section class="issue-section">
             <h2 class="issue-title">Issue 01</h2>
 
-            <!-- Literature & Reviews -->
+            <!-- Literature -->
             <div class="category-group">
                 <h3 class="category-title">Literature</h3>
                 <ul class="article-list">
                     <li class="article-item">
-                        <a href="article1.html" class="article-link">The Turn of the Screw: A Novella Review</a>
-                        <span class="author-name">By Zainab Ammar</span>
-                    </li>
-                    <li class="article-item">
-                        <a href="article8.html" class="article-link">Strange Case of Dr. Jekyll and Mr. Hyde: A Novella Review</a>
+                        <a href="article6.html" class="article-link">Wuthering Heights Book Review and Character Sketch</a>
                         <span class="author-name">By Zainab Ammar</span>
                     </li>
                 </ul>
@@ -231,7 +233,7 @@
                 <h3 class="category-title">Science</h3>
                 <ul class="article-list">
                     <li class="article-item">
-                        <a href="article2.html" class="article-link">Passive Radiative Cooling Surfaces for Urban Heat Mitigation</a>
+                        <a href="article1.html" class="article-link">The Art of Spectroscopy</a>
                         <span class="author-name">By Zainab Ammar</span>
                     </li>
                 </ul>
@@ -242,22 +244,33 @@
                 <h3 class="category-title">Philosophy</h3>
                 <ul class="article-list">
                     <li class="article-item">
-                        <a href="article3.html" class="article-link">Silence, Faith, and Nature in Kierkegaard's Discourses</a>
-                        <span class="author-name">By Zainab Ammar</span>
-                    </li>
-                    <li class="article-item">
-                        <a href="article4.html" class="article-link">Meditations on First Philosophy: Descartes' Quest for Certainty</a>
+                        <a href="article7.html" class="article-link">Descartes' Meditations</a>
                         <span class="author-name">By Zainab Ammar</span>
                     </li>
                 </ul>
             </div>
 
-            <!-- Fashion & Culture -->
+            <!-- Rights -->
             <div class="category-group">
-                <h3 class="category-title">Fashion &amp; Culture</h3>
+                <h3 class="category-title">Rights</h3>
                 <ul class="article-list">
                     <li class="article-item">
-                        <a href="article5.html" class="article-link">Gothic Aesthetics and Silhouette Evolution in Modern Garment Design</a>
+                        <a href="article4.html" class="article-link">Misogyny in STEM</a>
+                        <span class="author-name">By Zainab Ammar</span>
+                    </li>
+                    <li class="article-item">
+                        <a href="article5.html" class="article-link">The Ongoing Struggle of Women in Afghanistan</a>
+                        <span class="author-name">By Zainab Ammar</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Entomology -->
+            <div class="category-group">
+                <h3 class="category-title">Entomology</h3>
+                <ul class="article-list">
+                    <li class="article-item">
+                        <a href="article2.html" class="article-link">Moths: Seekers of Light</a>
                         <span class="author-name">By Zainab Ammar</span>
                     </li>
                 </ul>
@@ -268,11 +281,7 @@
                 <h3 class="category-title">Poetry</h3>
                 <ul class="article-list">
                     <li class="article-item">
-                        <a href="article6.html" class="article-link">Bewildered by Mortality</a>
-                        <span class="author-name">By Zainab Ammar</span>
-                    </li>
-                    <li class="article-item">
-                        <a href="article7.html" class="article-link">Chambers of the Mind</a>
+                        <a href="article3.html" class="article-link">Webs of Poison</a>
                         <span class="author-name">By Zainab Ammar</span>
                     </li>
                 </ul>
